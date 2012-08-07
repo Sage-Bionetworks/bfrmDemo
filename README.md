@@ -1,4 +1,4 @@
 bfrmDemo
 ========
 
-Demonstration code
+Code for demonstrating BFRM.
