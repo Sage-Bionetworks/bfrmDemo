@@ -36,3 +36,19 @@ mycEvolveFactor <- evolve(exprs(nMycEset),
 
 
 ##########
+# VISUALIZE THE RESULT
+##########
+
+image(t(mycEvolveFactor@results$mF[ -1, ]))
+
+## Each row represents the factor scores across all 18 samples (columns).
+## An internal reality-check is to now take your factors and project them back
+## on the original data and see how they compare to your result mF matrix
+
+mFHat <- projection(mycEvolveFactor, exprs(nMycEset))
+
+## Look at the projection heatmap
+
+image(mFHat)
+
+
