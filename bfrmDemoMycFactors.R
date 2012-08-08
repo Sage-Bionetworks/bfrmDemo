@@ -21,7 +21,7 @@ topProbeInd <- grep("TRUE", topProbeLogical)
 # RUN BFRM IN THE FACTOR DISCOVERY MODE
 ##########
 
-bCatEvolveFactor <- evolve(exprs(nMycEset), 
+mycEvolveFactor <- evolve(exprs(nMycEset), 
                            init = as.numeric(topProbeInd),
                            priorpsia = 2,
                            priorpsib = 0.005,
