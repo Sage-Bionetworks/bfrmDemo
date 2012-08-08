@@ -1,4 +1,4 @@
 bfrmDemo
 ========
 
-Code for demonstrating BFRM.
+Code for demonstrating BFRM. The first QC script merely shows how an raw data from an experimentally-controlled perturbation of the Myc oncogene was normalized using a supervised method (gratis Brig Mecham of Sage Bionetworks). The second script shows the actual method where BFRM is used in two stages. First as a sparse ANOVA to identify genes with high posterior probability of being differentially expressed between the experiment and control data, and then using this feature list (restricted to posterior probability ≥ 0.99) to search for Myc-related factors. The 'projection' method is also quickly demonstrated here. 
